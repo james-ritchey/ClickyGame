@@ -1,0 +1,21 @@
+.char-card {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #cacaca;
+    transition: box-shadow 0.2s;
+    box-shadow: 3px 3px 3px grey;
+}
+
+.char-card img {
+    width: calc(100% - 1em);
+    margin: 0.5em;
+}
+
+.char-card:hover {
+    box-shadow: 6px 6px 6px grey;
+}
+
+.char-card:active {
+    box-shadow: 4px 4px 3px grey;
+}
