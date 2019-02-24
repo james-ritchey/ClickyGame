@@ -3,8 +3,9 @@
     height: auto;
     border-radius: 4px;
     border: 1px solid #cacaca;
+    background: white;
     transition: box-shadow 0.2s;
-    box-shadow: 3px 3px 3px grey;
+    box-shadow: 0px 0px 3px grey;
 }
 
 .char-card img {

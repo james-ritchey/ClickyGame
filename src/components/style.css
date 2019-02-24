@@ -3,17 +3,21 @@
     grid-column-gap: 1em;
     grid-row-gap: 1em;
     grid-template-columns: 30% 30% 30%;
-    width: 80%;
+    width: 60%;
     margin: auto;
-    background: #ffffff;
+    margin-top: 10vh;
+    background-image:  url("../images/light_grey.png");
     justify-items: center;
+    padding: 2em 1em 2em 1em;
+    justify-content: center;
+    box-shadow: 0px 0px 50px #4e4e4e;
 
 }
 
-.container {
-
+body {
+    margin: 0;
 }
 
 html {
-    background: #8f8f8f
+    background-image: url("../images/gplaypattern.png");
 }

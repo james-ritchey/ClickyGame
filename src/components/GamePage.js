@@ -10,7 +10,7 @@ class GamePage extends Component {
         hasClicked: [],
         score: 0,
         highScore: 0,
-        info: "Click an image to begin!"
+        info: "Click an image to begin, don't click on the same image twice!"
     }
 
     /**
@@ -43,16 +43,18 @@ class GamePage extends Component {
     handleCharClick = (char) => {
         if(!this.state.hasClicked.includes(char)){
             var temp = this.state.hasClicked;
+            var info = "Correct!";
             temp.push(char);
             console.log(temp);
-            if(temp.length === 9) {
+            if(this.state.hasClicked.length === 9) {
                 temp = [];
+                info = "All images clicked, keep going!";
             }
             var tempScore = this.state.score + 1;
             if(this.state.highScore < tempScore) {
                 this.setState({highScore: tempScore});
             }
-            this.setState({hasClicked: temp, score: tempScore, info: "Correct!"});
+            this.setState({hasClicked: temp, score: tempScore, info: info});
             console.log(this.state);
         }
         else {
